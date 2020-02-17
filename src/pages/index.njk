@@ -1,0 +1,15 @@
+{% extends "layouts/default.njk" %}
+
+{% from 'components/app-nav/app-nav.template.njk' import AppNav %}
+{% from 'components/app-promo/app-promo.template.njk' import AppPromo %}
+{% from 'components/app-projects/app-projects.template.njk' import AppProjects %}
+{% from 'components/app-footer/app-footer.template.njk' import AppFooter %}
+{% from 'components/app-copy/app-copy.template.njk' import AppCopy %}
+
+{% block page %}
+    {{ AppNav() }}
+    {{ AppPromo() }}
+    {{ AppProjects() }}
+    {{ AppFooter() }}
+    {{ AppCopy() }}
+{% endblock %}

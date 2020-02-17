@@ -1,0 +1,23 @@
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0 40px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: color-mod(var(--indigo) alpha(0.9));
+  backdrop-filter: blur(8px);
+  & a {
+    padding: 20px;
+    display: block;
+    color: var(--white);
+    transition-duration: 0.3s;
+    text-decoration: none;
+    font-size: 24px;
+    &:hover {
+      background-color: var(--indigo--900);
+    }
+  }
+}
